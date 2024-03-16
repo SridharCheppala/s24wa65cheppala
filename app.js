@@ -6,7 +6,7 @@ var logger = require('morgan');
  
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var mydataRouter = require('./routes/myData');
+var myDataRouter = require('./routes/mydata');
 //var computationRouter = require('./routes/computation');
  
  
@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
  
 app.use('/', indexRouter);
-app.use('/myData', mydataRouter);
+app.use('/mydata', myDataRouter);
 app.use('/users', usersRouter);
 //app.use('/computation', computationRouter);
  
