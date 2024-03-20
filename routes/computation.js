@@ -3,9 +3,9 @@ var router = express.Router();
 let x= Math.random()*100;
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  let y = Math.atanh(x);
+  let y = Math.atan2(x);
   
-  res.send(`atanh of ${x} is ${y}`);
+  res.send(`atan2 of ${x} is ${y}`);
 });
 
 module.exports = router;
